@@ -23,8 +23,6 @@ const Timer = () => {
   const stopTimer = () => {
     setStatus(false);
     setSeconds(0);
-
-    document.querySelector("#time").value = 0;
   };
 
   useEffect(() => {
@@ -39,7 +37,10 @@ const Timer = () => {
   }, [status, time]);
   return (
     <div className="timer">
-      <Display seconds={seconds} time={time} handleChange={handleChange} />
+      <Display seconds={seconds}
+      status={status}
+      time={time} 
+      handleChange={handleChange} />
       <Controls
         startTimer={startTimer}
         stopTimer={stopTimer}

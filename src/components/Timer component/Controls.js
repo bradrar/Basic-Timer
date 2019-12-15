@@ -6,13 +6,13 @@ const Controls = ({ startTimer, pauseTimer, status, stopTimer }) => {
   const play = (
     <button className="custom-button play ui green button" onClick={startTimer}>
       {" "}
-      Play
+      <i className="huge play icon"></i>
     </button>
   );
   const pause = (
     <button className="custom-button pause ui grey button" onClick={pauseTimer}>
       {" "}
-      Pause{" "}
+      <i className="huge pause icon"></i>
     </button>
   );
   const playOrPause = !status ? play : pause;
@@ -24,8 +24,7 @@ const Controls = ({ startTimer, pauseTimer, status, stopTimer }) => {
         className="custom-button reset ui primary button"
         onClick={stopTimer}
       >
-        {" "}
-        Reset{" "}
+       <i className="huge sync alternate icon"></i>
       </button>
     </div>
   );
