@@ -1,10 +1,11 @@
 import React from "react";
+import "../styles/Display.css";
 
 const Display = ({ seconds, time, handleChange }) => {
   return (
-    <div>
+    <div className="display">
       {seconds}
-      <div>
+      <div className="input-number">
         <input
           type="number"
           id="time"

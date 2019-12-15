@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Display from "./Display";
 import Controls from "./Controls";
+import "../styles/Timer.css";
 
 const Timer = () => {
   const [seconds, setSeconds] = useState(111111111111);
@@ -37,8 +38,7 @@ const Timer = () => {
     };
   }, [status, time]);
   return (
-    <div>
-      Timer component
+    <div className="timer">
       <Display seconds={seconds} time={time} handleChange={handleChange} />
       <Controls
         startTimer={startTimer}
