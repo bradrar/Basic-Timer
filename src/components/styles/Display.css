@@ -4,6 +4,9 @@
  font-size: 20px;
 }
 
+::placeholder {
+  color: aqua;
+}
 
 input {
   border:0;

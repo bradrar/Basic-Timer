@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Controls.css";
 
 // pause , stop and reset
-const Controls = ({ startTimer, pauseTimer, status, stopTimer }) => {
+const Controls = ({ startTimer, pauseTimer, status, stopTimer, seconds }) => {
   const play = (
     <button className="custom-button play ui green button" onClick={startTimer}>
       {" "}
@@ -10,7 +10,7 @@ const Controls = ({ startTimer, pauseTimer, status, stopTimer }) => {
     </button>
   );
   const pause = (
-    <button className="custom-button pause ui grey button" onClick={pauseTimer}>
+    <button style={{backgroundColor: seconds <= 10 ? "red" : "gray"}}  className="custom-button pause ui grey button" onClick={pauseTimer}>
       {" "}
       <i className="huge pause icon"></i>
     </button>
@@ -26,6 +26,7 @@ const Controls = ({ startTimer, pauseTimer, status, stopTimer }) => {
       >
        <i className="huge sync alternate icon"></i>
       </button>
+     
     </div>
   );
 };
