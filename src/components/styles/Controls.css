@@ -1,31 +1,26 @@
-
 .custom-button {
   background-color: transparent;
-  width: 130px;
+  width: 150px;
   height: 100px;
   outline: 0;
   box-shadow: none !important;
-
 }
 
 .play,
 .pause {
   position: absolute;
-  border-radius: 0px 0px 0px 500px !important;
-  left: 12px;
-  bottom: 1px;
-
+  left: 0;
+  bottom: 0;
 }
 
 .reset {
   position: absolute;
-  border-radius: 0px 0px 100px 0 !important;
-  right: 5px;
-  bottom: 1px;
+  right: 0;
+  bottom: 0;
+  width: 140px;
 }
 
-.custom-button  i {
- 
+.custom-button i {
   position: absolute;
   top: 40%;
   left: 70%;
