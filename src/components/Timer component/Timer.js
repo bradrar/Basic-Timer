@@ -13,11 +13,13 @@ const Timer = () => {
   };
 
   const startTimer = () => {
-    if (seconds !== "0") {
+    if (seconds > 0) {
       setStatus(true);
       document.getElementById("sound").pause();
       document.getElementById("sound").currentTime = 0; //add this to reset audio
     }
+    document.getElementById("sound").pause();
+    document.getElementById("sound").currentTime = 0; //add this to reset audio
   };
 
   const pauseTimer = () => {
